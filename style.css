@@ -1,0 +1,101 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #ffd6e8, #ffb3c6);
+  color: #333;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Các thẻ quiz, nút, và lời chúc giữ nguyên */
+.quiz {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 25px 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  backdrop-filter: blur(8px);
+  font-size: 20px; /* 💥 thêm dòng này để chữ to hơn */
+
+}
+
+button, .option {
+  background-color: #f06292;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover, .option:hover {
+  background-color: #ec407a;
+}
+
+#wish {
+  font-size: 15px;
+  font-weight: 600;
+  color: #c2185b;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px 50px;
+  border-radius: 20px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.15);
+}
+
+/* Hiệu ứng bùng nổ lời chúc */
+.explode {
+  animation: popIn 1s ease;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.LA {
+  width: 380px;
+  border-radius: 20px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: opacity 1.2s ease, transform 0.8s ease;
+}
+
+.hidden { opacity: 0; pointer-events: none; }
+.show { opacity: 1; pointer-events: auto; }
+
+#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999; /* 👈 đảm bảo cao nhất, luôn trên ảnh */
+}
+
+
+
+
+
+
+

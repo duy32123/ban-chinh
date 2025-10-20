@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thử thách 20/10 🎓</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<canvas id="confetti"></canvas>
+<body>
+  <div class="container">
+    <h1>🍋 Món quà 20/10 🍋</h1>
+    <p class="intro">Giải xong rồi mới được nhận quà nha 😏</p>
+
+    <!-- Câu 1 -->
+    <div class="quiz" id="quiz1">
+      <p><strong>Câu 1:</strong> Tính giới hạn: <em>limₓ→0 (sin x / x)</em> = ?</p>
+      <input type="text" id="answer1" placeholder="Nhập đáp án...">
+      <button id="submit1">Kiểm tra</button>
+      <p id="feedback1"></p>
+    </div>
+
+    <!-- Câu 2 -->
+    <div class="quiz hidden" id="quiz2">
+      <p><strong>Câu 2:</strong> Bạn thấy tôi thế nào? 😏</p>
+      <div class="options">
+        <button class="option">Đẹp Trai 😅</button>
+        <button class="option">Đẹp Trai và Tốt Bụng 😤</button>
+        <button class="option">Tốt Bụng và Đẹp Trai 😎</button>
+        <button class="option">Không nói!</button>
+      </div>
+      <p id="feedback2"></p>
+    </div>
+
+    <!-- Lời chúc -->
+    <div id="wish" class="hidden">
+      <h2>🌼 Chúc mừng ngày 20/10 🌼</h2>
+      <p>Chúc bạn Linh Anh luôn đặc biệt, mạnh mẽ và tỏa sáng giống như tri thức của bạn vậy!! <br> Hi vọng rằng mọi điều mong muốn sẽ mau đến với bạn.</p>
+    </div>
+    <button id="musicBtn" class="hidden">🎵 Bật nhạc</button>
+    <img id="LAImg" src="LA.jpg" alt="Đúng một ảnh trên face" class="hidden LA">
+  </div>
+
+  <canvas id="confetti"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
